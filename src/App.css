@@ -464,7 +464,7 @@ button:hover {
 .login-form h3 {
   text-align: center;
   color: #333;
-  margin-bottom: 15px; /* Slightly reduced margin */
+  
   font-size: 1.5em;    /* Optional: adjust font size if it seems too big for smaller panel */
 }
 
@@ -504,7 +504,6 @@ button:hover {
 }
 
 .login-container h2 {
-  margin-bottom: 30px;
   font-size: 40px;
   color: #ffffff;
 }
@@ -549,7 +548,7 @@ button:hover {
   display: flex;
   align-items: center;       /* center vertically */
   justify-content: center;   /* center horizontally */
-  gap: 15px;                 /* space between logo and text */
+  gap: 50px;                 /* space between logo and text */
   padding: 10px 0;           /* optional vertical padding */
 }
 
@@ -565,5 +564,5 @@ button:hover {
   font-size: 1.8rem;
   font-weight: 600;
   color: #ffffff;            /* example color */
-  margin: 0;                 /* remove default margin */
+  margin: 0;  
 }
