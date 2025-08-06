@@ -254,7 +254,7 @@ function FeeCalculator({ onLogout }) {
       </div>
 
       <div className="logo-header">
-        <img src="/sisenco.png" alt="Company Logo" className="company-logo" />
+        <img src={process.env.PUBLIC_URL + '/sisenco.png'} alt="Logo" className="company-logo" />
         <h1 className="app-title">PayPath Smart Fee Calculator</h1>
       </div>
       <div className="left-form">

@@ -22,7 +22,7 @@ function Login({ onLoginSuccess }) {
   return (
     <div className="login-container">
       <div className="logo-header">
-        <img src="sisenco.png" alt="Logo" className="app-logo" />
+        <img src={process.env.PUBLIC_URL + '/sisenco.png'} alt="Logo" className="app-logo" />
         <h1 className="header-title">PayPath Smart Fee Calculator</h1>
       </div>
 
