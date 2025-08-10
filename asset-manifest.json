@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/PayPath/static/css/main.5d0361fb.css",
-    "main.js": "/PayPath/static/js/main.4054e087.js",
+    "main.css": "/PayPath/static/css/main.85964668.css",
+    "main.js": "/PayPath/static/js/main.7a39895a.js",
     "static/js/453.1119a9f0.chunk.js": "/PayPath/static/js/453.1119a9f0.chunk.js",
     "index.html": "/PayPath/index.html",
-    "main.5d0361fb.css.map": "/PayPath/static/css/main.5d0361fb.css.map",
-    "main.4054e087.js.map": "/PayPath/static/js/main.4054e087.js.map",
+    "main.85964668.css.map": "/PayPath/static/css/main.85964668.css.map",
+    "main.7a39895a.js.map": "/PayPath/static/js/main.7a39895a.js.map",
     "453.1119a9f0.chunk.js.map": "/PayPath/static/js/453.1119a9f0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5d0361fb.css",
-    "static/js/main.4054e087.js"
+    "static/css/main.85964668.css",
+    "static/js/main.7a39895a.js"
   ]
 }
