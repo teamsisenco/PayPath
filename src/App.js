@@ -4,15 +4,20 @@ import Login from "./components/Login";
 import "./App.css";
 
 function App() {
-  // Initialize the state by checking localStorage.
-  // If a value exists, parse it as a boolean. Otherwise, default to false.
+  // Initialize the 'loggedIn' state directly by checking localStorage.
+  // This runs only once when the component is first created.
   const [loggedIn, setLoggedIn] = useState(() => {
-    const savedLoginState = localStorage.getItem("loggedIn");
-    return savedLoginState ? JSON.parse(savedLoginState) : false;
+    try {
+      const savedLoginState = localStorage.getItem("loggedIn");
+      return savedLoginState ? JSON.parse(savedLoginState) : false;
+    } catch (error) {
+      console.error("Failed to parse login state from localStorage", error);
+      return false;
+    }
   });
 
-  // Use a useEffect hook to save the 'loggedIn' state to localStorage
-  // every time it changes.
+  // This useEffect will run whenever the 'loggedIn' state changes,
+  // keeping localStorage in sync with the state.
   useEffect(() => {
     localStorage.setItem("loggedIn", JSON.stringify(loggedIn));
   }, [loggedIn]);
