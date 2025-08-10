@@ -548,7 +548,7 @@ button:hover {
   display: flex;
   align-items: center;       /* center vertically */
   justify-content: center;   /* center horizontally */
-  gap: 50px;                 /* space between logo and text */
+  gap: 20px;                 /* space between logo and text */
   padding: 10px 0;           /* optional vertical padding */
 }
 
