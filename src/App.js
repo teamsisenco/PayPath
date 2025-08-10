@@ -4,8 +4,8 @@ import Login from "./components/Login";
 import "./App.css";
 
 function App() {
-  // Initialize the 'loggedIn' state directly by checking localStorage.
-  // This runs only once when the component is first created.
+  // Initialize the 'loggedIn' state by checking localStorage.
+  // The function passed to useState is only executed on the initial render.
   const [loggedIn, setLoggedIn] = useState(() => {
     try {
       const savedLoginState = localStorage.getItem("loggedIn");
@@ -16,8 +16,8 @@ function App() {
     }
   });
 
-  // This useEffect will run whenever the 'loggedIn' state changes,
-  // keeping localStorage in sync with the state.
+  // Use useEffect to keep localStorage in sync with the 'loggedIn' state.
+  // This hook runs every time 'loggedIn' changes.
   useEffect(() => {
     localStorage.setItem("loggedIn", JSON.stringify(loggedIn));
   }, [loggedIn]);

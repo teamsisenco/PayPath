@@ -164,7 +164,7 @@ function FeeCalculator({ onLogout }) {
             value: "3 installments of Rs. 8000 + 1 installment of Rs. 6000",
           }
         );
-      } else if (paid === 16000 || paid === 17000 ) {
+      } else if (paid === 16000 || paid === 17000) {
         result.summary = "25% (Rs. 4000) deducted from course fee.";
         result.breakdown.push(
           { label: "Amount Paid in 2023", value: "Rs. 17000" },

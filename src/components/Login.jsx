@@ -12,8 +12,7 @@ function Login({ onLoginSuccess }) {
   const handleLogin = (e) => {
     e.preventDefault();
     if (email === ADMIN_EMAIL && password === ADMIN_PASSWORD) {
-      onLoginSuccess(); // Call the prop on successful login
-      setMessage("Login successful!");
+      onLoginSuccess();
     } else {
       setMessage("Invalid credentials.");
     }
