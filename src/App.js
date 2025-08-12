@@ -4,23 +4,22 @@ import Login from "./components/Login";
 import "./App.css";
 
 function App() {
-  // Initialize the 'loggedIn' state by checking localStorage.
-  // The function passed to useState is only executed on the initial render.
-  const [loggedIn, setLoggedIn] = useState(() => {
-    try {
-      const savedLoginState = localStorage.getItem("loggedIn");
-      return savedLoginState ? JSON.parse(savedLoginState) : false;
-    } catch (error) {
-      console.error("Failed to parse login state from localStorage", error);
-      return false;
-    }
-  });
+  const [loggedIn, setLoggedIn] = useState(false);
+  const [hasAttemptedAutoLogin, setHasAttemptedAutoLogin] = useState(false);
 
-  // Use useEffect to keep localStorage in sync with the 'loggedIn' state.
-  // This hook runs every time 'loggedIn' changes.
   useEffect(() => {
-    localStorage.setItem("loggedIn", JSON.stringify(loggedIn));
-  }, [loggedIn]);
+    const savedLoginState = sessionStorage.getItem("loggedIn");
+    if (savedLoginState === "true") {
+      setLoggedIn(true);
+    }
+    setHasAttemptedAutoLogin(true);
+  }, []);
+
+  useEffect(() => {
+    if (hasAttemptedAutoLogin) {
+      sessionStorage.setItem("loggedIn", JSON.stringify(loggedIn));
+    }
+  }, [loggedIn, hasAttemptedAutoLogin]);
 
   const handleLoginSuccess = () => {
     setLoggedIn(true);
@@ -28,7 +27,12 @@ function App() {
 
   const handleLogout = () => {
     setLoggedIn(false);
+    sessionStorage.removeItem("loggedIn");
   };
+
+  if (!hasAttemptedAutoLogin) {
+    return null; // or a spinner
+  }
 
   return (
     <div className="App">

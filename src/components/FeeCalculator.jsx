@@ -439,13 +439,10 @@ function FeeCalculator({ onLogout }) {
           </div>
 
           <div className="footer-section">
-            <h4>About Sisenco</h4>
+            <h4>Help & Support</h4>
             <p>
-              With over a decade of excellence, we are a leading Korean language education provider in Sri Lanka, recognized for our creative teaching approach, student success,commitment to accessible,  and high-quality learning experience through Learning Management System(LMS).
+              Click here to learn how the fees are calculated. 
             </p>
-          </div>
-
-          <div className="footer-section">
             <h4>Connect with us</h4>
             <div className="social-icons">
               <a
@@ -481,7 +478,7 @@ function FeeCalculator({ onLogout }) {
                 <i className="fab fa-tiktok"></i>
               </a>
             </div>
-          </div>
+          </div>          
         </div>
         <p className="footer-bottom">© Sisenco Korean Language Center. All rights reserved.</p>
       </footer>

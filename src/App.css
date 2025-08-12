@@ -359,10 +359,10 @@ button:hover {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 30px;
-  max-width: 2000px;
+  gap: 80px;
+  max-width: 1000px;
   margin: 0 auto;
-  padding-left: 300px;
+  padding-left: 170px;
 }
 
 .footer-section {
@@ -372,7 +372,7 @@ button:hover {
 
 .footer-section h4 {
   margin-bottom: 15px;
-  color: #ffffff;
+  color: #91d9f3;
   font-size: 18px;
   font-weight: bold;
 }
@@ -380,6 +380,7 @@ button:hover {
 .footer-section p {
   font-size: 15px;
   line-height: 1.7;
+  text-align: justify;
 }
 
 .social-icons a {
@@ -390,7 +391,7 @@ button:hover {
 }
 
 .social-icons a:hover {
-  color: #ff4b1e;
+  color: #91d9f3;
 }
 
 .footer-bottom {
