@@ -50,7 +50,7 @@ function HelpPage() {
         
         <div className="help-section">
           <h3>LMS Video Watched Fee</h3>
-          <p>This fee only applies to <strong>2025 students who have paid the full Rs. 32,000</strong> and wish to get a refund after watching LMS content. The fee depends on the class and the duration of access:</p>
+          <p>This fee only applies to <strong>2025 students who have paid the full Rs. 32,000</strong> and wish to enroll 2026 theory class. The fee depends on the class and the period student have watched the recordings.</p>
           <h4>For Classes P01-P07:</h4>
           <ul>
             <li>1-2 months: Rs. 2,000</li>
