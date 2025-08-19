@@ -567,3 +567,86 @@ button:hover {
   color: #ffffff;            /* example color */
   margin: 0;  
 }
+
+/* Help Page Styles           */
+
+/* Styles for the main content block of the help page */
+.help-content {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 2rem;
+  max-width: 800px;
+  margin: 2rem auto; /* Centers the box on the page */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  text-align: left;
+}
+
+.help-content p{
+  color: #555;
+}
+
+/* Styles for each logical section (e.g., "Students from 2024") */
+.help-section {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #eee;
+}
+
+/* Remove border from the last section */
+.help-section:last-of-type {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.help-content h2 {
+  color: #333;
+  margin-top: 0;
+  border-bottom: 2px solid #1a73e8;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.help-section h3 {
+  color: #1a73e8;
+  margin-bottom: 1rem;
+}
+
+.help-section p, .help-section li {
+  line-height: 1.6;
+  color: #555;
+}
+
+.help-section ul {
+  padding-left: 20px;
+}
+
+/* Styles for the "Back to Calculator" button link */
+.back-button {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 12px 24px;
+  background-color: #1a73e8;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+.back-button:hover {
+  background-color: #155ab6;
+}
+
+/* Style for the link in the footer */
+.help-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.help-link:hover {
+  text-decoration: underline;
+}

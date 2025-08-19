@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../App.css";
+import { Link } from "react-router-dom";
 
 function FeeCalculator({ onLogout }) {
   const [yearJoined, setYearJoined] = useState("2025");
@@ -440,9 +441,9 @@ function FeeCalculator({ onLogout }) {
 
           <div className="footer-section">
             <h4>Help & Support</h4>
-            <p>
-              Click here to learn how the fees are calculated. 
-            </p>
+            <Link to="/help" className="help-link">
+                Click here to learn how the fees are calculated.
+              </Link>
             <h4>Connect with us</h4>
             <div className="social-icons">
               <a
